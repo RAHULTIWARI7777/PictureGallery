@@ -1,0 +1,86 @@
+/* Page Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a5a93; /* Page background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Content Container */
+.container {
+    max-width: 800px; /* Maximum container width */
+    margin: 0 auto; /* Center container horizontally */
+    padding: 20px; /* Padding inside container */
+    background-color: #fff; /* Container background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Container box shadow */
+}
+
+/* Page Title */
+h1 {
+    text-align: center; /* Center-align the text */
+    color: #333; /* Title text color */
+}
+
+/* Search Input Container */
+.search-container {
+    text-align: center; /* Center-align the content inside */
+    margin-bottom: 20px; /* Spacing at the bottom */
+}
+
+/* Text Input Styles */
+input[type="text"] {
+    width: 60%; /* Input width */
+    padding: 10px; /* Input padding */
+    font-size: 16px; /* Input font size */
+    border: 1px solid #ccc; /* Input border */
+}
+
+/* Search Button Styles */
+button {
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button font size */
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Gallery Grid Styles */
+.gallery {
+    display: grid; /* Use grid layout for the gallery */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid columns */
+    grid-gap: 20px; /* Spacing between grid items */
+}
+
+/* Picture Card Styles */
+.picture-card {
+    border: 1px solid #ccc; /* Border around picture cards */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Box shadow for cards */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+/* Image Styles within Picture Cards */
+.picture-card img {
+    width: 100%; /* Make images width 100% of their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Additional Information Styles within Picture Cards */
+.picture-card .info {
+    padding: 10px; /* Padding inside the card */
+    background-color: #f0f0f0; /* Background color for information section */
+}
+
+/* Link Styles within Picture Cards */
+.picture-card a {
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+/* Media Query for Screens with a Maximum Width of 768px */
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    }
+}
+
